@@ -95,7 +95,13 @@ body {
 }
 
 a {
-	color: var(--text-color)
+	color: var(--text-color);
+
+}
+
+a:hover {
+    text-decoration: none;
+    text-shadow: 2px 2px #ff0000;
 }
 
 /*.text-area h1,
@@ -170,6 +176,37 @@ a {
 @media only screen and (min-width:550px) {
 	.hero {
 		font-size: 11rem;
+	}
+}
+
+.back {
+    position: fixed;
+    font-size: 2rem;
+	line-height: .9;
+	letter-spacing: -.03em;
+    z-index: 999;
+    transition: 0.4s;
+}
+
+@media only screen and (min-width:550px) {
+	.back {
+		font-size: 5vw;
+	}
+}
+
+.caption {
+    position: absolute;
+    font-size: 1.5vw;
+	line-height: .9;
+	letter-spacing: -.03em;
+    z-index: 999;
+    transition: 0.4s;
+    vertical-align: bottom;
+}
+
+@media only screen and (min-width:550px) {
+	.caption {
+		font-size: 3vw;
 	}
 }
 
@@ -730,41 +767,15 @@ body {
 }
 
 
-
-.intro-credit {
-	right: 0;
-	text-align: right
-}
-
-@media only screen and (min-width:550px) {
-	.intro-credit {
-		position: absolute
-	}
-}
-
-.intro {
-	width: 100%;
-	float: left;
-	margin: var(--gutter) 0
-}
-
-.intro p {
-	padding: 0 var(--gut)
-}
-
-.intro a {
-	color: var(--text-color)
-}
-
-
 .projects {
 	width: 100%;
 	float: left;
 	margin: var(--gutter) 0
 }
 
-.projects h1 {
-	margin-bottom: var(--gut)
+.project-hero {
+	width: 100%;
+	float: left;
 }
 
 .project-gallery, .footer{
@@ -862,4 +873,19 @@ box-shadow: 3px 4px 10px -3px rgba(0,0,255,1);
 		bottom: auto;
 		left: auto
 	}
+}
+
+
+.img-container:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  20% { transform: translate(-2px, 0px) rotate(1deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  60% { transform: translate(-2px, 1px) rotate(0deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
