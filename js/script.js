@@ -1,15 +1,16 @@
-/*window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("return").style.fontSize = "3vw";
-  } else {
-    document.getElementById("return").style.fontSize = "5vw";
-  }
-}*/
+//window.onscroll = function() {scrollFunction()};
+//
+//function scrollFunction() {
+//  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//    document.getElementById("return").style.fontSize = "3vw";
+//  } else {
+//    document.getElementById("return").style.fontSize = "5vw";
+//  }
+//}
 
 
 $(document).ready(function() {
+    console.log("Hire me pls")
  
   $("#owl-demo").owlCarousel({
       margin: 10,
