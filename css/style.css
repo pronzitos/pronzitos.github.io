@@ -65,6 +65,11 @@ font-stretch: normal;
 font-display: block
 }*/
 
+@font-face {
+  font-family: Reckless;
+  src: url(/assets/fonts/NeueHaasGrotDisp-65Medium.otf);
+}
+
 html {
     font-size: 12px
 }
@@ -82,8 +87,7 @@ html {
 }
 
 body {
-    font-family: Times New Roman;
-    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-family: Reckless;
     font-weight: 400;
     color: var(--text-color)
 }
@@ -182,7 +186,7 @@ margin-bottom: var(--gutter)
     line-height: .9;
     letter-spacing: -.01em;
     border-bottom: 2px solid #1e1e1c;
-    padding-bottom: 0.2em;
+    padding-bottom: 0.1em;
 }
 
 @media only screen and (min-width:550px) {
